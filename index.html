@@ -12,7 +12,7 @@
         <form id="notificationForm">
             <div class="form-group">
                 <label for="message">Mensagem:</label>
-                <input type="text" id="message" name="message" required>
+                <input type="text" id="message" name="message" autocomplete="off" required>
             </div>
             <div class="form-group">
                 <label for="priority">Prioridade:</label>
@@ -23,10 +23,11 @@
                 </select>
             </div>
             <button type="submit">Enviar</button>
+            <button type="button" id="receiveButton">Receber Notificações</button>
         </form>
         <div id="feedback" class="feedback"></div>
     </div>
-
+ 
     <div class="container">
         <h1>Notificações Recebidas</h1>
         <div class="role-selection">
@@ -39,7 +40,7 @@
         </div>
         <div id="notificationList" class="notification-list"></div>
     </div>
-
+ 
     <script src="script.js"></script>
 </body>
 </html>
